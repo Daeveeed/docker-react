@@ -5,5 +5,5 @@ services:
 before_install:
   - docker build -t davidnwoye/docker-react -f dockerfile.dev .
 
-  script:
+script:
   - docker run davidnwoye/docker-react npm run test -- --coverage
